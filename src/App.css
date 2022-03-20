@@ -1,13 +1,27 @@
-.App {
+.App, .app-child{
   text-align: center;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+.App {
+  flex-direction: column;
   height: 100%;
+}
+
+.app-child{
+  flex-direction: row;
 }
 
 .avatar{
   border-radius: 50%;
+}
+
+button{
+  height: 30px;
+  border: none;
+  padding: 5px;
+  margin: 10px;
 }

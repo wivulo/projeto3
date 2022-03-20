@@ -1,22 +1,26 @@
 import './App.css';
+import { useState } from 'react';
 
-const products = [
-  {title: 'Rama', isFruit: false, id: 1},
-  {title: 'Ginboa', isFruit: false, id: 2},
-  {title: 'Maça', isFruit: true, id: 3},
-];
+function Mybutton() {
+  const [count, setCount] = useState(0);
 
-export default function ShopingList(){
-  const listItem = products.map(product => 
-    <li key={product.id} style={{color: product.isFruit ? 'magenta' : 'darkgreen'}}>
-      {product.title}
-    </li>
-  );
-
+  function handlerclick() {
+    setCount(count + 1)
+  }
 
   return (
+    <button onClick={handlerclick}> clicked {count} times</button>
+  );
+}
+
+export default function MyApp() {
+  return (
     <div className='App'>
-      <ul>{listItem}</ul>
+      <h1>Counters thet update separately</h1>
+      <div className='app-child'>
+        <Mybutton />
+        <Mybutton />
+      </div>
     </div>
   );
 }
