@@ -4,11 +4,12 @@ import './index.css';
 import App from './App';
 import Profile from './App';
 import ShopingList from './App';
+import MyApp from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-   <ShopingList />
+   <MyApp />
   </React.StrictMode>,
   document.getElementById('root')
 );
