@@ -1,4 +1,5 @@
 import './App.css';
+import profile from './profile.jpg';
 
 function MyButton(){
   return (
@@ -17,7 +18,7 @@ function MyButton(){
 
 const user = {
   name: 'Walter Ivulo',
-  imageUrl: './profile.jpg',
+  imageUrl: profile,
   imageSize: 90,
 };
 
